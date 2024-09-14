@@ -6,158 +6,109 @@
       href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/recipe/favicon.ico" type="image/x-icon" />
     <script src="app.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BrightBlog</title>
+    <title>George's Good Food</title>
   </head>
   <body>
     <header id="mainheader">
-      <h1 id="logo">BrightBlog</h1>
-      <nav>
+      <h1 id="logo">George's Good Food</h1>
+      <nav id="navbar">
         <ul id="navul">
-          <li>
-            <a href="/" class="navbutton">Home</a>
-          </li>
-          <li>
-            <a href="/" class="navbutton">About</a>
-          </li>
-          <li>
-            <a href="/" class="navbutton">Contact</a>
-          </li>
+          <li><a href="/recipe/index.html" class="navbutton">Home</a></li>
+          <li><a href="/recipe/about.html" class="navbutton">About</a></li>
+          <li><a href="/recipe/recipes.html" class="navbutton">Recipes</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <div id="main-content">
-        <article>
-          <header>
-            <h2>All Amusing Facts About Dogs</h2>
-            <h3>Read time: 100 minutes</h3>
-          </header>
-          <main>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-              laborum vero ipsam dignissimos eveniet quisquam necessitatibus ad
-              obcaecati totam commodi adipisci asperiores tempora voluptatum
-              autem nihil incidunt molestiae eligendi dolores optio aliquid
-              labore, perferendis cum itaque. A fuga consequuntur quos. Culpa id
-              est laboriosam blanditiis pariatur maiores, ratione eum illo minus
-              perspiciatis animi minima officia similique! Officiis molestiae
-              asperiores magni aliquid, esse architecto aperiam ducimus
-              perspiciatis, quia laudantium beatae, dolore excepturi maxime.
-              Animi rem soluta earum possimus. Voluptates, optio soluta?
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-              voluptatibus suscipit saepe molestiae, omnis iste earum accusamus
-              est magnam vitae provident quos, perferendis nam vel possimus qui
-              fugit eveniet officiis velit modi maiores reprehenderit deserunt
-              ipsam. Iure ut voluptas adipisci neque necessitatibus sed
-              inventore labore. Id ut vero cupiditate error?
-            </p>
-          </main>
-          <footer>
-            <h2>Author: George</h2>
-            <img src="https://placebear.com/100/100" alt="picture of a bear" />
-          </footer>
-        </article>
-        <article>
-          <header>
-            <h2>Ten Amusing Facts About Dogs</h2>
-            <h3>Read time: 5 minutes</h3>
-          </header>
-          <main>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-              laborum vero ipsam dignissimos eveniet quisquam necessitatibus ad
-              obcaecati totam commodi adipisci asperiores tempora voluptatum
-              autem nihil incidunt molestiae eligendi dolores optio aliquid
-              labore, perferendis cum itaque. A fuga consequuntur quos. Culpa id
-              est laboriosam blanditiis pariatur maiores, ratione eum illo minus
-              perspiciatis animi minima officia similique! Officiis molestiae
-              asperiores magni aliquid, esse architecto aperiam ducimus
-              perspiciatis, quia laudantium beatae, dolore excepturi maxime.
-              Animi rem soluta earum possimus. Voluptates, optio soluta?
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-              voluptatibus suscipit saepe molestiae, omnis iste earum accusamus
-              est magnam vitae provident quos, perferendis nam vel possimus qui
-              fugit eveniet officiis velit modi maiores reprehenderit deserunt
-              ipsam. Iure ut voluptas adipisci neque necessitatibus sed
-              inventore labore. Id ut vero cupiditate error?
-            </p>
-          </main>
-          <footer>
-            <h2>Author: George</h2>
-            <img src="https://placebear.com/100/100" alt="picture of a bear" />
-          </footer>
-        </article>
+      <header>
+        <h2>Simple Hamburger</h2>
+        <p>Easy Burgers Anytime</p>
+      </header>
+      <div id="container">
+        <div id="recipe-info">
+          <div>
+            <span>Prep Time</span>
+            15 mins
+          </div>
+          <div>
+            <span>Cook Time</span>
+            10 mins
+          </div>
+          <div>
+            <span>Serves</span>
+            2
+          </div>
+        </div>
       </div>
-
-      <hr />
-      <h2>Sign up for our newsletter!</h2>
-      <form action="" method="">
-        <label for="first_name">First Name:</label>
-        <input type="text" id="first_name" required />
-        <br />
-        <label for="last_name">Last Name:</label>
-        <input type="text" id="last_name" required />
-        <br />
-        <label for="email">Email:</label>
-        <input type="email" name: "email" id="email" required />
-        <br />
-        <label for="password">Password:</label>
-        <input type="password" name: "password" id="password" required />
-        <br />
-        <label for="favourite_animal">Favourite Animal:</label>
-        <input type="radio" name: "favourite_animal" id="dog" value="dog"/>
-        <label for="dog">Dog</label>
-        <input type="radio" name: "favourite_animal" id="cat" value="cat"/>
-        <label for="cat">Cat</label>
-        <input type="radio" name: "favourite_animal" id="hedgehog"
-        value="hedgehog"/>
-        <label for="cat">Hedgehog</label>
-        <br />
-        <label for="country">Country:</label>
-        <select name="country" id="country">
-          <option value="england">England</option>
-          <option value="england">Scotland</option>
-          <option value="england">Wales</option>
-          <option value="england">Northern Ireland</option>
-        </select>
-        <br />
-        <label for="bio">Biography:</label>
-        <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
-        <br />
-        <input type="checkbox" id="subscribe" name="subscribe" />
-        <label for="subscribe">Subscribe to our newsletter!</label>
-        <br />
-        <input type="submit" value="Send!" />
-      </form>
-      <hr />
-    </main>
-
-    <footer>
-      <h2 id="botlogo">BrightBlogSite</h2>
-      <section>
-        <nav>
-          <ul id="footer-ul">
-            <div>
-              <li><a href=""></a>Home</li>
-              <li><a href=""></a>About Us</li>
-              <li><a href=""></a>Contact</li>
-              <li><a href=""></a>Careers</li>
-            </div>
-            <div>
-              <li><a href="">Privacy Policy</a></li>
-              <li><a href=""></a>T&C's</li>
-              <li><a href="">Cookie Policy</a></li>
-            </div>
+      <div id="image-container">
+        <img
+          src="https://foodish-api.com/images/burger/burger42.jpg"
+          alt="Burger"
+          id="recipe-image"
+        />
+      </div>
+      <div id="recipe-content">
+        <section id="ingredients">
+          <h2>Ingredients</h2>
+          <ul>
+            <li>500g ground beef</li>
+            <li>Salt and pepper to taste</li>
+            <li>
+              Optional seasonings (e.g., garlic powder, onion powder, paprika)
+            </li>
+            <li>4 slices of cheese (optional, for cheeseburgers)</li>
+            <li>4 hamburger buns</li>
+            <li>Lettuce leaves</li>
+            <li>1 tomato, sliced</li>
+            <li>Pickles, sliced</li>
+            <li>Ketchup, mustard, or other desired condiments</li>
+            <li>2 tbsp olive oil (for grilling or pan-frying)</li>
           </ul>
-        </nav>
-      </section>
-    </footer>
+        </section>
+        <section id="instructions">
+          <h2>Method</h2>
+          <ol>
+            <li>Preheat your grill or stovetop pan over medium-high heat.</li>
+            <li>
+              In a bowl, combine ground beef with salt, pepper, and any desired
+              seasonings. Mix gently until just combined.
+            </li>
+            <li>
+              Form the mixture into patties, making a slight indentation in the
+              center of each patty.
+            </li>
+            <li>
+              Place the patties on the grill or in the pan. Cook for about 4-5
+              minutes per side, or until the internal temperature reaches 160°F
+              (71°C) for medium doneness.
+            </li>
+            <li>
+              During the last minute of cooking, add a slice of cheese to each
+              patty, if desired, and close the grill lid or cover the pan to
+              melt the cheese.
+            </li>
+            <li>
+              While the patties are cooking, toast the burger buns on the grill
+              or in a toaster until golden brown.
+            </li>
+            <li>
+              Assemble the burgers by placing the cooked patties on the bottom
+              buns. Top with lettuce, tomato, pickles, and your favorite
+              condiments.
+            </li>
+            <li>Serve immediately and enjoy your homemade hamburgers!</li>
+          </ol>
+        </section>
+      </div>
+      <footer>&copy; George's Good Food | Designed by George Gourley</footer>
+    </main>
   </body>
 </html>

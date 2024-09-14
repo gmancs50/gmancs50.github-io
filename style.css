@@ -1,105 +1,172 @@
 body {
-    background-color: rgb(255, 242, 214);
-    font-family: Helvetica, Arial, sans-serif;
-    margin: 0px;
-    font-size: 1.5vw;
+    font-family: 'Roboto', sans-serif; /* Fallback to sans-serif if Arial is not available */
+}
+
+/* Optional: Override font for specific elements if needed */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif; /* Different font for headers */
+}
+
+p, ul, ol, a {
+    font-family: 'Roboto', sans-serif; /* Different font for paragraphs and lists */
 }
 
 #logo {
     margin: 0%;
     padding: 8px;
-    font-family: "Fredoka One", sans-serif;
+    font-family: "Arial", sans-serif;
     border-radius: 15%;
     text-shadow: 
     1px 1px 1px black,
     1px 1px 1px black;
 }
 
-#botlogo {
-    color: white;
-    margin: 0%;
-    padding: 8px;
-    font-family: "Fredoka One", sans-serif;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FEFAE0;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-p {
-    font-size: 0.75em;
+header {
+    background-color: #B99470;
+    color: #FEFAE0;
+    padding: 20px;
+    text-align: center;
 }
 
-ul {
-    margin: 0%;
+main > header {
+    background-color: #333;
 }
 
-body > main > article {
-    width: 70%;
-    margin: auto;
-}
-
-body > header {
-    background-color: orange;
-    color: white;
-}
-
-#mainheader {
-    display: flex;
-    height: 12vh;
-    align-items: center;
-    justify-content: space-between;
-}
-
-body > header > nav > ul {
-    list-style: none;
+#navbar {
+    margin-top: 10px;
+    color: #333;
     text-decoration: none;
-    display: flex;
 }
 
 #navul {
-    display: flex;
-}
-
-form {
-    text-align: center;
-}
-
-h2 {
-    text-align: center;
-}
-
-.navbutton {
-    text-decoration: none;
-    color: white;
-    padding: 12px;
-    border: 1px solid white;
-    border-radius: 10px;
-    margin: 0 10px;
-}
-
-body > footer {
-    background-color: orange;
-    display: flex;
-}
-
-img {
-    border-radius: 100%;
-}
-
-#footer-ul {
-    display: flex;
     list-style: none;
-}
-
-#footer-ul > div > li {
-    margin-left: 12px;
-    color: white;
-    text-decoration: none;
-}
-
-#footer-ul > div > li > a {
-    text-decoration: none;
-    color: white;
-}
-
-#main-content {
+    padding: 0;
+    margin: 0;
     display: flex;
-    width: 70%;
+    justify-content: center;
+    gap: 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+#container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff3e6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+#recipe-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+#recipe-info div {
+    text-align: center;
+}
+
+#recipe-info div span {
+    display: block;
+    font-weight: bold;
+}
+
+/* Fixing Flexbox Layout for Ingredients and Instructions */
+#recipe-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+/* Adjust width of ingredients and instructions */
+#ingredients, #instructions {
+    width: 40%; /* Side-by-side layout, both take 45% */
+}
+
+/* For smaller screens, stack ingredients and instructions */
+@media (max-width: 768px) {
+    #recipe-content {
+        flex-direction: column; /* Stack vertically on mobile */
+    }
+
+    #ingredients, #instructions {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+#ingredients ul, #instructions ol {
+    margin-left: 10px;
+    padding-left: 20px;
+    list-style-position: inside;
+}
+
+#ingredients {
+    text-align: left;
+    margin: auto;
+    padding: 5%;
+}
+
+#instructions {
+    text-align: left;
+    margin: auto;
+    padding: 5%;
+}
+
+#image-container {
+    text-align: center;
+}
+
+#recipe-image {
+    max-width: 50%;
+    height: auto;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+ol {
+    margin-left: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#intro > p {
+    font: 100;
+    padding: 0;
+    margin: auto;
+}
+
+body > header > nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+#intro {
+    padding: 20px;
+}
+
+#recipe-main {
+    padding: 20px;
 }
